@@ -7,4 +7,16 @@ c8a2732f-f6b5-444c-96f8-2b688a864544
 {4,"_$Session$_.Authentication",1},
 {13,1,1},
 {4,"_$Session$_.Start",2},
-{4,"_$Session$_.Finish",3}
+{4,"_$Session$_.Finish",3},
+{4,"_$InfoBase$_.ConfigUpdate",4},
+{4,"_$InfoBase$_.DBConfigUpdateStart",5},
+{4,"_$InfoBase$_.DBConfigUpdate",6},
+{3,"1CV8C",2},
+{4,"_$User$_.New",7},
+{4,"_$InfoBase$_.DumpStart",8},
+{4,"_$InfoBase$_.DumpFinish",9},
+{4,"_$Session$_.AuthenticationError",10},
+{1,d44bac63-a64b-42df-9fe3-c43a3cee38be,"Администратор",2},
+{13,1,2},
+{4,"_$User$_.Update",11},
+{4,"_$User$_.Delete",12}
