@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<ConfigDumpInfo xmlns="http://v8.1c.ru/8.3/xcf/dumpinfo" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" format="Hierarchical" version="2.11">
+<ConfigDumpInfo xmlns="http://v8.1c.ru/8.3/xcf/dumpinfo" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" format="Hierarchical" version="2.15">
 	<ConfigVersions>
-		<Metadata name="Configuration.Конфигурация" id="2b20af8a-0e9b-4a19-8a57-096f51de0eeb" configVersion="2397a1729d992444883a85e3fb5f1a2100000000"/>
+		<Metadata name="Configuration.Конфигурация" id="2b20af8a-0e9b-4a19-8a57-096f51de0eeb" configVersion="801c2a91a6d08d4c9ce81cc15900aab100000000"/>
 		<Metadata name="Language.Русский" id="9d11293b-c10f-496e-97c7-11378800c2e3" configVersion="72bf26e2941c4141a367358a09f6b8dd00000000"/>
 		<Metadata name="Role.ПолныеПрава" id="8f3cbb85-6921-4058-a56e-606521ae8f2b" configVersion="1f9d27284b7fe14f8691bf3f0e6b085f00000000"/>
 		<Metadata name="Role.ПолныеПрава.Rights" id="8f3cbb85-6921-4058-a56e-606521ae8f2b.0" configVersion="8a00b8a181349b43a2d092a694c21bca00000000"/>

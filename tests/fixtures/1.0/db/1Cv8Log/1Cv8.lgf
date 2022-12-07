@@ -19,4 +19,8 @@ c8a2732f-f6b5-444c-96f8-2b688a864544
 {1,d44bac63-a64b-42df-9fe3-c43a3cee38be,"Администратор",2},
 {13,1,2},
 {4,"_$User$_.Update",11},
-{4,"_$User$_.Delete",12}
+{4,"_$User$_.Delete",12},
+{2,"WIN-LIVFRVQFMKO",2},
+{13,2,1},
+{1,058f6af7-71b2-4c2c-bd6f-5d3137fd2fd5,"admin",3},
+{13,2,3}
