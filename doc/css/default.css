@@ -1,0 +1,542 @@
+/* JPM: modified to use inheritage widely
+* 	em sizing to better zooming
+* 	coloring similar to MSDN Web
+*/
+html {
+    font-family:'Segoe UI','Lucida Grande',Verdana,Arial,Helvetica,sans-serif;
+    font-size:.8125em
+/* 13px; */
+}
+
+body {
+    background-color:#fff;
+    color:#000;
+    font-weight:400;
+    max-width: 1080px;
+    margin: 10px;
+}
+
+table {
+    border-collapse:collapse;
+    border-color:silver;
+    border-style:solid;
+    border-width:1px;
+    margin-top:5px;
+    width:100%
+}
+
+table.noborder {
+    border-width:0
+}
+
+th {
+/* font-size:.875em;  /* 14px; DOCTYPE without .dld */
+    background-color:#b9b6b6;
+    border-color:silver;
+    border-style:solid;
+    border-width:1px;
+    color:#707070;
+    padding:4px;
+    text-align:left
+}
+
+th.new {
+    width:224px
+}
+
+th.old {
+    width:226px
+}
+
+th.width25 {
+    width:25%
+}
+
+th.width75 {
+    width:75%
+}
+
+tr {
+    padding:4px
+}
+
+tr.yellow,tr.yellowbold {
+    background-color:#ffff9C
+}
+
+tr.Moccasin{
+    background-color:#FFE4B5
+}
+
+tr.yellowbold {
+    font-weight:700
+}
+
+table td {
+/* font-size:.875em;  /* 14px; DOCTYPE without .dld */
+    border-color:silver;
+    border-style:solid;
+    border-width:1px;
+    padding:4px
+}
+
+table.noborder td {
+    border-width:0
+}
+
+td.center {
+    text-align:center
+}
+
+td.right {
+    text-align:right
+}
+
+td.sep {
+    border-color:#fff silver
+}
+
+b {
+    font-weight:700
+}
+
+u {
+    text-decoration:underline
+/* for HTML5 compatibility if needed */
+}
+
+p {
+    margin:0;
+    padding-bottom:5px;
+    padding-top:5px
+}
+
+p.center {
+    text-align:center
+}
+
+span.underline {
+    text-decoration:underline
+}
+
+.funcdesc {
+    font-size:1.25em
+/* 20px; */
+}
+
+ul.cell {
+    margin:0 0 0 25px
+}
+
+div.indent {
+    margin-left:32px
+}
+
+a,a:link {
+    color:#00709f
+}
+
+a:visited {
+    color:#03697a
+}
+
+a:active {
+    color:#2a2a2a
+}
+
+a:hover {
+    color:#3390b1
+}
+
+a,a:link,a:visited,a:active {
+    text-decoration:none
+}
+
+a:hover {
+    text-decoration:underline
+}
+
+a.ext:link,a.ext:visited,a.ext:active {
+    text-decoration:underline
+}
+
+a.codeSnippetLink:hover {
+    text-decoration:underline
+}
+
+h1 {
+    color:#707070;
+    font-size:2.75em;
+/* 36-44px; */
+    font-weight:400;
+    margin:0;
+    padding-bottom:15px;
+    padding-top:15px
+}
+
+.small {
+    font-size:.875em;
+/* 12-14px; */
+    margin:-12px 0 -4px;
+    padding-bottom:0;
+    padding-top:9px
+}
+
+h2 {
+    color:#db7100;
+    font-size:1.5em;
+/* 24px; */
+    font-weight:400;
+    line-height:normal;
+    margin:0;
+    padding-bottom:5px;
+    padding-top:25px
+}
+
+h3 {
+    color:navy;
+    font-size:1.0625em;
+/* 17px; */
+    font-weight:700;
+    line-height:normal;
+    margin-bottom:0;
+    margin-left:5px
+}
+
+pre,.code,.codeheader,.codebox {
+    font-family:"Courier New",Courier,monospace
+}
+
+.code {
+    white-space:nowrap
+}
+
+.codeheader {
+    background-color:#ffa;
+    border-bottom:1px solid #aaa;
+    border-left:1px solid #aaa;
+    border-right:1px solid #aaa;
+    border-top:1px solid #aaa;
+    padding:16px;
+    white-space:normal
+}
+
+.codebox {
+    border-bottom:1px solid #aaa;
+    border-left:1px solid #aaa;
+    border-right:1px solid #aaa;
+    border-top:1px solid #aaa;
+    color:#465584;
+    overflow-x:auto;
+    padding:8px 8px 16px;
+    margin-top:5px;
+    white-space:nowrap;
+    width:99%
+}
+
+.S0 {
+    color:#2a2a2a
+}
+
+.S1 {
+    color:green;
+    font-style:italic
+}
+
+.S2 {
+    color:green;
+    font-style:italic
+}
+
+.S3 {
+    color:blue
+}
+
+.S4 {
+    color:#000090
+}
+
+.S5 {
+    color:blue
+}
+
+.S6 {
+    color:olive
+}
+
+.S7 {
+    color:red
+}
+
+.S8 {
+    color:#FF8000
+}
+
+.S9 {
+    color:#2a2a2a
+}
+
+.S10 {
+    color:gray
+}
+
+.S11 {
+    color:olive
+}
+
+.S12 {
+    color:#dc143c
+}
+
+.S13 {
+    background-color:#DDE8F0;
+    color:red
+}
+
+.S14 {
+    color:#939
+}
+
+.S15 {
+    color:#0080ff
+}
+
+.bottom {
+    padding-bottom:0;
+    margin-bottom:0
+}
+
+.experimental {
+    background-color:#ffffe0;
+    border:solid;
+    border-color:red;
+    font-size:1.5em;
+/* 24px; */
+    font-weight:700;
+    margin:12px;
+    padding:4px
+}
+
+.specialnote {
+    background-color:#fffffa;
+    border:solid;
+    border-color:blue;
+    font-size:1.5em;
+/* 24px; */
+    font-weight:500;
+    padding:4px
+}
+
+img.logo_v3 {
+    /* box-shadow:5px 5px 20px #aaa */
+}
+
+.noPageBreak {
+    page-break-inside:avoid
+}
+
+/* adapted from MSDN Web for example code open/copy actions */
+.codeSnippetContainer {
+    min-width:260px;
+    margin:0;
+    padding:0
+}
+
+.codeSnippetContainerTabs {
+    font-size:.8333em;
+/* 13.33px 10pt!important; */
+    height:20px;
+/* 22px; */
+    position:relative;
+    vertical-align:middle;
+    z-index:1
+}
+
+.codeSnippetContainerTab {
+/* background:none repeat scroll 0 0 #eff5ff; */
+    border-bottom:2px solid #d0d2d2;
+    border-top:1px solid #bbb;
+    border-left:1px solid #929292;
+    float:left;
+    height:20px;
+/* 19px; */
+    padding:0 4px;
+/* 0 8px; */
+    width:auto;
+    overflow:hidden;
+    position:relative;
+    font-weight:400
+}
+
+/* MSDN not used
+* .codeSnippetContainerTabActive
+* {
+* 	height:21px;
+* 	background:none repeat scroll 0 0 #fff;
+* 	border-left:1px solid #bbb;
+* 	border-bottom:none;
+* }
+* 
+* .codeSnippetContainerTabFirst
+* {
+* 	border-radius:4px 0 0 0;
+* 	padding:0 8px 0 6px;
+* }
+* 
+* .codeSnippetContainerTabLast
+* {
+* 	border-right:1px solid #bbb;
+* 	border-radius:0 4px 0 0;
+* 	padding:0 6px 0 8px;
+* }
+*/
+.codeSnippetContainerTabSingle {
+    border:none;
+    color:#00709f;
+/* #e66a38; */
+    vertical-align:baseline;
+    top:10px;
+/* 8px; */
+    left:12px;
+/* 7px; */
+    position:relative;
+    background-color:#fff
+}
+
+.codeSnippetContainerTabSingle a {
+    color:#e66a38
+/* !important; */
+}
+
+.codeSnippetContainerTab a,.codeSnippetContainerTab a:link,.codeSnippetContainerTab a:visited,.codeSnippetContainerTab a:active {
+    color:#1364c4;
+    text-decoration:none
+}
+
+/* MSDN not used
+* .codeSnippetContainerTabActive a,.codeSnippetContainerTabActive a:link,.codeSnippetContainerTabActive a:visited,.codeSnippetContainerTabActive a:active
+* {
+* 	color:#e66a38;
+* 	text-decoration:none;
+* 	position:relative;
+* }
+* 
+* .codeSnippetContainerTabPhantom a,.codeSnippetContainerTabPhantom a:link,.codeSnippetContainerTabPhantom a:visited,.codeSnippetContainerTabPhantom a:active
+* {
+* 	color:#c2c2c2;
+* 	text-decoration:none;
+* 	position:relative;
+* }
+* 
+* .codeSnippetContainerTabPhantom a:link,.codeSnippetContainerTabPhantom a:visited,.codeSnippetContainerTabPhantom a:active
+* {
+* 	color:#707070;
+* 	text-decoration:none;
+* 	position:relative;
+* }
+*/
+.codeSnippetContainerTab a:hover {
+    color:#e66a38;
+    position:relative
+}
+
+/* MSDN not used
+* .codeSnippetContainerTabPhantom a:hover
+* {
+* 	color:#c2c2c2;
+* 	position:relative;
+* }
+*/
+.codeSnippetContainerCodeContainer {
+    border-bottom:3px solid #e5e5e5;
+    border-left:3px solid #e5e5e5;
+/* 1px */
+    border-right:3px solid #e5e5e5;
+/* 1px */
+    clear:both;
+    margin-bottom:0;
+/* 12px; */
+    position:relative;
+    top:-3px
+}
+
+.codeSnippetToolBar {
+    border-left:0 solid #e5e5e5;
+/* 1px */
+    border-right:0 solid #e5e5e5;
+/* 3px */
+    border-top:3px solid #e5e5e5;
+    height:auto;
+    width:auto
+}
+
+div.codeSnippetToolBarText {
+    float:right;
+    top:-12px;
+/* -8px; */
+    position:relative;
+    background-color:#fff;
+    width:auto;
+    padding-left:4px;
+    padding-right:4px;
+    height:0;
+    vertical-align:top
+}
+
+div.codeSnippetToolBarText>a:link,div.codeSnippetToolBarText>a:visited,div.codeSnippetToolBarText>a:active {
+/* display:none; */
+    margin-left:5px;
+    margin-right:5px;
+/* font-size:100%; /* 83.33%; /* 10pt */
+/* font-style:400!important; */
+/* color:#1364c4; */
+    text-decoration:none;
+    background-color:#fff;
+    padding-left:4px;
+    padding-right:4px
+}
+
+div.codeSnippetToolBarText>a:hover {
+    text-decoration:underline
+}
+
+.codeSnippetContainerCode {
+    margin-top:14px;
+/* 0; */
+    padding:5px 10px;
+/* 9px 21px; */
+    width:auto
+}
+
+.codeSnippetContainerCode div {
+    padding:0;
+    margin:0
+}
+
+.codeSnippetContainerCode pre {
+    padding-left:5px;
+/* 5px; */
+    margin:0;
+/*word-break:break-all;*/
+    font-style:normal;
+    font-weight:400;
+    overflow:auto;
+    word-wrap:normal
+}
+
+#hhctrl {
+    vertical-align:middle
+}
+
+#hhctrl-bottom {
+    vertical-align:bottom
+}
+
+.codeSnippetContainerTab object {
+    cursor:pointer;
+    text-decoration:underline
+}
+
+.valign-top {
+    vertical-align:text-top
+}
