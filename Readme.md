@@ -28,7 +28,7 @@
 КонфигФайл.СоздатьКонфигурационныйФайл("c:\tmp\my-config.yml");
 ```
 
-## [Программный интерфейс](https://github.com/alex-bob-lip/ibcmdrunner/tree/main/doc/index.htm)
+## [Программный интерфейс](https://github.com/alex-bob-lip/ibcmdrunner/tree/main/doc/doc.md)
 
 ## Лицензия
 
