@@ -1,4 +1,11 @@
 Readme.html
 tests/fixtures/1.0/db/1Cv8Log/*
 tests/fixtures/8_3_22/db/1Cv8Log/*
+tests/fixtures/8_3_22/db/1Cv8Log/*
 tests/fixtures/8_3_21/db/1Cv8Log/*
+*.ospx
+oscript_modules/
+out/
+*.1CD
+1Cv8.1CD.cfl
+tests/fixtures/8_3_22/db/1Cv8.1CD.cfl

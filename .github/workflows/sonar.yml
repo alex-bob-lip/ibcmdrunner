@@ -1,0 +1,14 @@
+name: Контроль качества
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  sonar:
+    uses: autumn-library/workflows/.github/workflows/sonar.yml@v1
+    with:
+      github_repository: vanessa-opensource/ibcmdrunner # change me!
+    secrets:
+      SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
